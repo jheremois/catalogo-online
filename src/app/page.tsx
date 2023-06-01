@@ -49,8 +49,8 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 py-6 gap-3">
             {
-              devices.map((device)=>(
-                <div className=" text-center">
+              devices.map((device, index)=>(
+                <div className=" text-center" key={index}>
                   <div className="text-lg mb-2">
                     {device.name}
                   </div>
