@@ -134,7 +134,7 @@ export default function Home() {
         <div className="flex justify-center px-4">
           <div className="rounded-2xl contactInfo p-4 flex flex-col gap-3">
             <p className='text-center font-semibold text-white'>
-            "Financiamiento disponible para tus dispositivos electrónicos, sin complicaciones."
+            &quot;Financiamiento disponible para tus dispositivos electrónicos, sin complicaciones.&quot;
             </p>
             <div className="flex justify-between">
               <button className='bg-white px-8 p-2 rounded-full font-bold'>
