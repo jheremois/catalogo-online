@@ -10,7 +10,7 @@ const Header = ()=>{
         <div className='fixed w-screen z-50'>
         <header className='bg-dark flex justify-between p-4 overflow-hidden rounded-b-3xl items-center'>
           <div className="">
-            <img src='' alt="App logo"/>
+            <img src='fstech.png' alt="App logo" width={30}/>
           </div>
           <div className="">
             <button onClick={()=>{
