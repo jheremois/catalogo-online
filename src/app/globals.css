@@ -19,3 +19,6 @@ body{
   border-radius: 23px;
 } 
 
+.contactInfo{
+  background: linear-gradient(180deg, #FF5050 0%, #2A4351 98.44%);
+}

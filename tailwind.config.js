@@ -15,10 +15,15 @@ module.exports = {
       red: colors.red,
       slate: colors.slate,
       dark: "#242424",
-      background: "#F3F3F3",
-      lowGray: "#BBBBBB"
+      background: "#ECECEC",
+      lowGray: "#BBBBBB",
+      ligthGray: "#585858",
+      mainPurple: "#C047E0"
     },
     extend: {
+      skew: {
+        '12': '12deg',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
