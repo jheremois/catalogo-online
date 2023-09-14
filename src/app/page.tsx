@@ -45,9 +45,9 @@ export default function Home() {
           Ver mas
         </div>
         {/* componente 1 */}
-        <div className="flex flex-col overflow-hidden"
+        <div className="flex flex-col overflow-hidden w-full"
           style={{
-            height: 640
+            height: 670
           }}
         >
           <div className="">
