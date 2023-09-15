@@ -15,6 +15,8 @@ module.exports = {
       red: colors.red,
       slate: colors.slate,
       dark: "#242424",
+      mainBlack: "#060606",
+      mainBlue: "#4593E7",
       background: "#ECECEC",
       lowGray: "#BBBBBB",
       ligthGray: "#585858",

@@ -10,48 +10,48 @@ export default function Ios() {
 
   const phones = [
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
     {
-      img: "iosP/ip14.png",
+      img: "smp/glxflip.png",
       name: "Iphone 14"
     },
   ]
 
   return (
     <>
-      <AltHeader titColor='FFD8EB' subTitle='Iphone'/>
-      <div className="bg-mainBlack">
-        <div className=" relative">
+      <AltHeader titColor='56AFFB' subTitle='Samsung'/>
+      <div className="">
+        <div className="bg-mainBlack relative">
           <div 
-            className="text-white absolute top-0 w-full bg-gray-400 h-full text-center py-6 px-20 flex flex-col items-center gap-2"
+            className="text-white absolute top-0 w-full h-full text-center py-6 px-20 flex flex-col items-center gap-2"
             style={{
-              background: "linear-gradient(180deg, #927380 0%, rgba(0, 0, 0, 0.00) 59.24%)"
+              
             }}
           >
             <h1 className='text-2xl font-bold'>
@@ -61,10 +61,10 @@ export default function Ios() {
               uno de estos puede llama tu atencion
             </p>
           </div>
-          <img src="iosP/iosBanner.png" alt="" className='w-full' />
+          <img src="smP/smBanner.png" alt="" className='w-full' />
         </div>
         <div className="p-6">
-          <hr className=' border-b-2'/>
+          <hr className=' border-b-2 border-mainBlack'/>
           <h2 
             className=' text-4xl text-center font-bold p-4 px-11 pb-10' 
             style={{color: "#5D78EF"}}
@@ -75,11 +75,11 @@ export default function Ios() {
             {
               phones.map((phone, i)=>(
               <div className="text-white text-center items-center flex flex-col gap-2 mb-5" key={i}>
-                <img src="iosP/ip14.png" alt="" className=' w-28' />
-                <p className='text-sm text-gray-300'>
+                <img src="smp/glxflip.png" alt="" className=' w-28' />
+                <p className='text-sm text-gray-600'>
                   Iphone 14
                 </p>
-                <button className='bg-mainBlue p-2 px-5 rounded-full uppercase text-sm font-semibold'>
+                <button className='bg-mainBlack p-2 px-5 rounded-full uppercase text-sm font-semibold'>
                   Comprar
                 </button>
               </div>
