@@ -3,10 +3,15 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { useState } from 'react';
 import Header from './components/Header';
+import ProductModal from './components/ProductModal';
 
 export default function Home() {
 
-  const [openMenu, setOpenMenu] = useState(false)
+  const [open, setOpen] = useState(false)
+  const [openPhone, setOpenPhone] = useState({
+    name: '',
+    img: ''
+  })
 
   const devices = [
     {
@@ -39,6 +44,7 @@ export default function Home() {
     <>
       <Header/>
       <main className='bg-background pt-8'>
+      <ProductModal open={open} setOpen={setOpen} activePhone={openPhone}/>
         <div className="flex justify-center flex-col items-center gap-4">
           <div className="bg-dark w-fit text-white p-2 px-6 text-2xl font-bold shadow-xl rounded-full">
             Ofertas de la semana
@@ -93,12 +99,18 @@ export default function Home() {
             <div className="grid grid-cols-2 py-6 gap-3">
               {
                 devices.map((device, index)=>(
-                  <div className=" text-center" key={index}>
-                    <div className="text-lg mb-2">
-                      {device.name}
-                    </div>
+                  <div 
+                    className="text-center cursor-pointer" 
+                    key={index} onClick={()=> {
+                      setOpen(true) 
+                      setOpenPhone(device)
+                    }}
+                  >
                     <div className="catItem p-6">
                       <img src={device.img} alt="" />
+                    </div>
+                    <div className="text-lg mt-2">
+                      {device.name}
                     </div>
                   </div>
                 ))

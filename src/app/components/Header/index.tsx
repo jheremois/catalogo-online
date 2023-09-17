@@ -44,7 +44,7 @@ const Header = ()=>{
                       Ofertas
                     </Link>
                     <Link href={'ios'}>
-                      Ios
+                      Iphone
                     </Link>
                     <Link href={'samsung'}>
                       Samsung
