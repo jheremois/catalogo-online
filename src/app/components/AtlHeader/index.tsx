@@ -51,7 +51,7 @@ const AltHeader = ({titColor = "f0f0f0", subTitle = "Otros" })=>{
                       Ofertas
                     </Link>
                     <Link href={'ios'}>
-                      Ios
+                      Apple
                     </Link>
                     <Link href={'samsung'}>
                       Samsung
@@ -59,7 +59,7 @@ const AltHeader = ({titColor = "f0f0f0", subTitle = "Otros" })=>{
                     <Link href={'otros'}>
                       Otros
                     </Link>
-                    <Link href={''}>
+                    <Link target='_blank' href={'https://wa.me/p/6785454001516571/18298395327'}>
                       Contactos
                     </Link>
                   </div>

@@ -45,7 +45,7 @@ export default function Ios() {
 
   return (
     <>
-      <AltHeader titColor='FFD8EB' subTitle='Iphone'/>
+      <AltHeader titColor='FFD8EB' subTitle='Apple'/>
       <div className="bg-mainBlack">
         <div className=" relative">
           <div 
@@ -77,7 +77,7 @@ export default function Ios() {
               <div className="text-white text-center items-center flex flex-col gap-2 mb-5" key={i}>
                 <img src="iosP/ip14.png" alt="" className=' w-28' />
                 <p className='text-sm text-gray-300'>
-                  Iphone 14
+                  iPhone 14
                 </p>
                 <button className='bg-mainBlue p-2 px-5 rounded-full uppercase text-sm font-semibold'>
                   Comprar
