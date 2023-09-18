@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Header from './components/Header';
 import ProductModal from './components/ProductModal';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 export default function Home() {
 
@@ -59,11 +62,11 @@ export default function Home() {
             }}
           >
             <div className="">
-              <img src="publicFrame.png" alt="" />
+              <img src="publicFrame.png" alt=""  className='translate-y-0 slideIn'/>
             </div>
             <div className="w-full flex flex-col -translate-y-16">
               <div className="-skew-y-12 text-center text-5xl font-bold py-3 bg-black w-full h-44 text-white">Disponibles</div>
-              <div className=" bg-black z-10 -translate-y-16 flex ">
+              <div className=" bg-black z-10 -translate-y-16 flex">
                 <div className="w-full">
                   <div className="flex flex-col gap-6">
                     <button className='
@@ -72,7 +75,7 @@ export default function Home() {
                     '>
                       Ver mas
                     </button>
-                    <img src="sideLPhone.png" alt="" />
+                    <img src="sideLPhone.png" alt="" className='translate-y-0 slideTop'/>
                   </div>
                 </div>
                 <div className="w-full">
@@ -81,7 +84,7 @@ export default function Home() {
                       IPhone 14
                     </p>
                     <div className="flex justify-end w-f">
-                      <img src="sideRPhone.png" alt="" />
+                      <img src="sideRPhone.png" alt="" className='translate-y-0 slideSide'/>
                     </div>
                   </div>
                 </div>
@@ -106,12 +109,15 @@ export default function Home() {
                       setOpenPhone(device)
                     }}
                   >
-                    <div className="catItem p-6">
-                      <img src={device.img} alt="" />
-                    </div>
-                    <div className="text-lg mt-2">
-                      {device.name}
-                    </div>
+                    <ScrollAnimation animateIn='fadeIn'
+                      animateOut='fadeOut'>
+                        <div className="catItem p-6">
+                          <img src={device.img} alt="" />
+                        </div>
+                        <div className="text-lg mt-2">
+                          {device.name}
+                        </div>
+                  </ScrollAnimation>
                   </div>
                 ))
               }
