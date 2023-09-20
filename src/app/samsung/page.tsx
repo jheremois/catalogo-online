@@ -10,38 +10,30 @@ export default function Ios() {
 
   const phones = [
     {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
+      name: "Samsung s23 ultra",
+      img: "smP/sm23ultra.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "48,000'"
     },
     {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
+      name: "Samsung s23",
+      img: "smP/sm23.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "39,000'"
     },
     {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
+      name: "Samsung galaxy flip z",
+      img: "smP/smflipz.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "25,000'"
     },
     {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
-    },
-    {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
-    },
-    {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
-    },
-    {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
-    },
-    {
-      img: "smp/glxflip.png",
-      name: "Iphone 14"
-    },
-  ]
+      name: "Samsung galaxy flip z fold 2",
+      img: "smP/smflipzfold.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "35,000'"
+    }
+  ];
 
   return (
     <>
@@ -75,9 +67,9 @@ export default function Ios() {
             {
               phones.map((phone, i)=>(
               <div className="text-white text-center items-center flex flex-col gap-2 mb-5" key={i}>
-                <img src="smp/glxflip.png" alt="" className=' w-28' />
+                <img src={phone.img} alt="" className=' h-36' />
                 <p className='text-sm text-gray-600'>
-                  Iphone 14
+                  {phone.name}
                 </p>
                 <button className='bg-mainBlack p-2 px-5 rounded-full uppercase text-sm font-semibold'>
                   Comprar
