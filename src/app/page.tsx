@@ -12,34 +12,48 @@ export default function Home() {
 
   const [open, setOpen] = useState(false)
   const [openPhone, setOpenPhone] = useState({
-    name: '',
-    img: ''
+    name: "",
+    img: "",
+    description: "",
+    price: ""
   })
 
-  const devices = [
+  const devices = [ 
     {
-      name: "iphone 14",
-      img: "vresources/phone.png"
+      name: "iPhone 14 Pro Max",
+      img: "iosP/ip14promax.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "48,000"
     },
     {
-      name: "iphone 14",
-      img: "vresources/phone.png"
+      name: "iPhone 14 Pro",
+      img: "iosP/ip14pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "39,000"
     },
     {
-      name: "iphone 14",
-      img: "vresources/phone.png"
+      name: "iPhone 14",
+      img: "iosP/ip14.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "25,000"
     },
     {
-      name: "iphone 14",
-      img: "vresources/phone.png"
+      name: "iPhone 13 Pro Max",
+      img: "iosP/ip13promax.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "35,000"
     },
     {
-      name: "iphone 14",
-      img: "vresources/phone.png"
+      name: "iPhone 13 Pro",
+      img: "iosP/ip13pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "29,000"
     },
     {
-      name: "iphone 14",
-      img: "vresources/phone.png"
+      name: "iPhone 13",
+      img: "iosP/ip13.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "25,000"
     },
   ]
 
@@ -112,7 +126,7 @@ export default function Home() {
                     <ScrollAnimation animateIn='fadeIn'
                       animateOut='fadeOut'>
                         <div className="catItem p-6">
-                          <img src={device.img} alt="" />
+                          <img src={device.img} alt="" className=' h-40 m-auto'/>
                         </div>
                         <div className="text-lg mt-2">
                           {device.name}
