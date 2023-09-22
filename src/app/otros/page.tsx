@@ -9,122 +9,110 @@ import ProductModal from '../components/ProductModal';
 
 export default function Otros() {
 
-  const phones = [
+  const redmiPhones = [
     {
-      name: "iPhone 14 Pro Max",
-      img: "iosP/ip14promax.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "48,000'"
-    },
-    {
-      name: "iPhone 14 Pro",
-      img: "iosP/ip14pro.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "39,000'"
-    },
-    {
-      name: "iPhone 14",
-      img: "iosP/ip14.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "25,000'"
-    },
-    {
-      name: "iPhone 13 Pro Max",
-      img: "iosP/ip13promax.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "35,000'"
-    },
-    {
-      name: "iPhone 13 Pro",
-      img: "iosP/ip13pro.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "29,000'"
-    },
-    {
-      name: "iPhone 13",
-      img: "iosP/ip13.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "25,000'"
-    },
-    {
-      name: "iPhone 12 Pro Max  ",
-      img: "iosP/ip12promax.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "22,000'"
-    },
-    {
-      name: "iPhone 12 Pro  ",
-      img: "iosP/ip12pro.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "17,000'"
-    },
-    {
-      name: "iPhone 12  ",
-      img: "iosP/ip12.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "1,000'"
-    },
-    {
-      name: "iPhone 11 Pro Max ",
-      img: "iosP/ip11promax.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "18,000'"
-    },
-    {
-      name: "iPhone 11 Pro ",
-      img: "iosP/ip11pro.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "15,000'"
-    },
-    {
-      name: "iPhone 11 ",
-      img: "iosP/ip11.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "13,000'"
-    },
-    {
-      name: "iPhone XS Max ",
-      img: "iosP/ip10xsmax.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "12,000'"
-    },
-    {
-      name: "iPhone XS ",
-      img: "iosP/ip10xs.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "9,000'"
-    },
-    {
-      name: "iPhone X ",
-      img: "iosP/ip10.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "8,500'"
-    },
-    {
-      name: "iPhone 8 Plus ",
-      img: "iosP/ip8plus.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "10,500"
-    },
-    {
-      name: "iPhone 8 ",
-      img: "iosP/ip8.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "8,000"
-    },
-    {
-      name: "iPhone 7 Plus",
-      img: "iosP/ip7plus.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "10,000"
-    },
-    {
-      name: "iPhone 7",
-      img: "iosP/ip7.png",
+      name: "REDMI 12C",
+      img: "otrosP/remi12c.png",
       description: "Desbloqueado 2 Meses de Garantia",
       price: "5,500"
+    },
+    {
+      name: "REDMI 12",
+      img: "otrosP/remi12.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "7,100"
+    },
+    {
+      name: "REDMI NOTE 12",
+      img: "otrosP/remiN12.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "7,900"
+    },
+    {
+      name: "REDMI NOTE 12s",
+      img: "otrosP/remiN12s.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "10,050"
+    },
+    {
+      name: "REDMI NOTE 12 PRO",
+      img: "otrosP/remiN12pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "12,900"
+    },
+    {
+      name: "REDMI NOTE 11 PRO",
+      img: "otrosP/remiN11pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "12,500"
     }
   ];
+
+  const amazonProducts = [
+    {
+      name: "Echo dot 4",
+      img: "otrosP/amz4.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "Echo dot 3",
+      img: "otrosP/amz3.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "7,100"
+    },
+    {
+      name: "Fire tv stick 4k",
+      img: "otrosP/amzFire.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "7,900"
+    }
+  ]
+
+  const certificados = [
+    {
+      name: "Apple watch series 8",
+      img: "otrosP/certified/apW8.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "Apple watch se",
+      img: "otrosP/certified/apWse.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "AirPods Pro (2.ª gen)",
+      img: "otrosP/certified/apApro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "AirPods (3.ª gen)",
+      img: "otrosP/certified/apA3.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "AirPods (2.ª gen)",
+      img: "otrosP/certified/apA2.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "Cable usb c a lightning",
+      img: "otrosP/certified/apCc.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "usb c brick",
+      img: "otrosP/certified/apC.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+  ]
   
   const [open, setOpen] = useState(false)
   const [openPhone, setOpenPhone] = useState({
@@ -171,7 +159,7 @@ export default function Otros() {
             <div className=" overflow-x-auto">
               <div className="flex gap-2 w-fit">
                 {
-                  phones.map((phone, i)=>(
+                  redmiPhones.map((phone, i)=>(
                   <div 
                     className=" cursor-pointer text-white text-center items-center flex flex-col gap-2 mb-5 w-40" key={i}
                     onClick={()=> {
@@ -180,7 +168,7 @@ export default function Otros() {
                     }}
                   >
                     <div className="w-40 h-36 rounded-xl flex justify-center items-center" style={{background: "#F2F2F2"}}>
-                      <img src={phone.img} alt="" className='' width={100}/>
+                      <img src={phone.img} alt="" className=' h-28' />
                     </div>
                     <p className='text-sm text-gray-600'>
                       {phone.name}
@@ -198,7 +186,7 @@ export default function Otros() {
             <div className=" overflow-x-auto">
               <div className="flex gap-2 w-fit">
                 {
-                  phones.map((phone, i)=>(
+                  amazonProducts.map((phone, i)=>(
                   <div 
                     className=" cursor-pointer text-white text-center items-center flex flex-col gap-2 mb-5 w-40" key={i}
                     onClick={()=> {
@@ -207,7 +195,7 @@ export default function Otros() {
                     }}
                   >
                     <div className="w-40 h-36 rounded-xl flex justify-center items-center" style={{background: "#F2F2F2"}}>
-                      <img src={phone.img} alt="" className='' width={100}/>
+                      <img src={phone.img} alt="" className=' h-28' />
                     </div>
                     <p className='text-sm text-gray-600'>
                       {phone.name}
@@ -224,8 +212,8 @@ export default function Otros() {
             </h4>
             <div className=" overflow-x-auto">
               <div className="flex gap-2 w-fit">
-                {
-                  phones.map((phone, i)=>(
+              {
+                  certificados.map((phone, i)=>(
                   <div 
                     className=" cursor-pointer text-white text-center items-center flex flex-col gap-2 mb-5 w-40" key={i}
                     onClick={()=> {
@@ -234,7 +222,7 @@ export default function Otros() {
                     }}
                   >
                     <div className="w-40 h-36 rounded-xl flex justify-center items-center" style={{background: "#F2F2F2"}}>
-                      <img src={phone.img} alt="" className='' width={100}/>
+                      <img src={phone.img} alt="" className=' h-28' />
                     </div>
                     <p className='text-sm text-gray-600'>
                       {phone.name}
@@ -250,7 +238,6 @@ export default function Otros() {
           <ContactFrame/>
         </div>
       </div>
-      <Footer/>
     </>
   )
 }

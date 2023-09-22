@@ -2,20 +2,25 @@ import Link from "next/link"
 
 const ContactFrame = ()=>(
     <div className="flex justify-center px-4">
-        <div className="rounded-2xl contactInfo p-4 flex flex-col gap-3">
+        <div className="rounded-2xl contactInfo p-4 mb-5 flex flex-col gap-3">
             <p className='text-center font-semibold text-white'>
             &quot;Financiamiento disponible para tus dispositivos electrónicos, sin complicaciones.&quot;
             </p>
             <div className="flex justify-between">
-            <button className='bg-white px-8 p-2 rounded-full font-bold'>
+            <Link 
+                target='_blank' href={'https://api.whatsapp.com/send?phone=8293754670&text='} 
+                className='bg-white px-8 p-2 rounded-full font-bold'
+            >
                 Contactar
-            </button>
+            </Link>
             <div className="flex gap-3">
-                <Link href={''}>
-                <img src="instagram.png" alt="" />
+                <Link target='_blank' href={'https://www.instagram.com/fstechcelulares/'}>
+                    <img src="instagram.png" alt="" />
                 </Link>
-                <Link href={''}>
-                <img src="phone.png" alt="" />
+                <Link 
+                    target='_blank' href={'https://api.whatsapp.com/send?phone=8293754670&text='} 
+                >
+                    <img src="phone.png" alt="" />
                 </Link>
             </div>
             </div>

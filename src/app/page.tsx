@@ -5,7 +5,8 @@ import { useState } from 'react';
 import Header from './components/Header';
 import ProductModal from './components/ProductModal';
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
+import ContactFrame from './components/ContactFrame';
+
 
 
 export default function Home() {
@@ -56,6 +57,44 @@ export default function Home() {
       price: "25,000"
     },
   ]
+  const otherDevices = [ 
+    {
+      name: "Echo dot 3",
+      img: "otrosP/amz3.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "7,100"
+    },
+    {
+      name: "usb c brick",
+      img: "otrosP/certified/apC.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "REDMI NOTE 12 PRO",
+      img: "otrosP/remiN12pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "12,900"
+    },
+    {
+      name: "REDMI NOTE 11 PRO",
+      img: "otrosP/remiN11pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "12,500"
+    },
+    {
+      name: "Echo dot 4",
+      img: "otrosP/amz4.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,500"
+    },
+    {
+      name: "Fire tv stick 4k",
+      img: "otrosP/amzFire.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "7,900"
+    }
+  ]
 
   return (
     <>
@@ -66,16 +105,16 @@ export default function Home() {
           <div className="bg-dark w-fit text-white p-2 px-6 text-2xl font-bold shadow-xl rounded-full">
             Ofertas de la semana
           </div>
-          <div id='loadMoreB' className="bg-dark w-fit text-white p-2 px-6 text-xl font-medium rounded-full">
+          {/* <div id='loadMoreB' className="bg-dark w-fit text-white p-2 px-6 text-xl font-medium rounded-full">
             Ver mas
-          </div>
+          </div> */}
           {/* componente 1 */}
           <div className="flex flex-col overflow-hidden w-full"
             style={{
-              height: 670
+              height: 685
             }}
           >
-            <div className="">
+            <div className="pt-5">
               <img src="publicFrame.png" alt=""  className='translate-y-0 slideIn'/>
             </div>
             <div className="w-full flex flex-col -translate-y-16">
@@ -83,12 +122,12 @@ export default function Home() {
               <div className=" bg-black z-10 -translate-y-16 flex">
                 <div className="w-full">
                   <div className="flex flex-col gap-6">
-                    <button className='
+                    <Link href={'ios'} className='
                       w-fit text-white font-semibold text-lg p-2 pl-5 shadow-lg shadow-gray-700 pr-8 bg-ligthGray rounded-r-full
                       border-r-2 border-t-2 border-b-2 border-mainPurple
                     '>
                       Ver mas
-                    </button>
+                    </Link >
                     <img src="sideLPhone.png" alt="" className='translate-y-0 slideTop'/>
                   </div>
                 </div>
@@ -123,75 +162,41 @@ export default function Home() {
                       setOpenPhone(device)
                     }}
                   >
-                    <ScrollAnimation animateIn='fadeIn'
-                      animateOut='fadeOut'>
-                        <div className="catItem p-6">
-                          <img src={device.img} alt="" className=' h-40 m-auto'/>
-                        </div>
-                        <div className="text-lg mt-2">
-                          {device.name}
-                        </div>
-                  </ScrollAnimation>
+                    <div className="catItem p-6">
+                      <img src={device.img} alt="" className=' h-40 m-auto'/>
+                    </div>
+                    <div className="text-lg mt-2">
+                      {device.name}
+                    </div>
                   </div>
                 ))
               }
             </div>
             <div className="">
               <div className='theMLists bg-white p-2 grid grid-cols-3 gap-2 rounded-lg shadow-lg'>
-                <div className="minList">
-                  <img src="mList.png" alt="" width={300} />
-                </div>
-                <div className="minList">
-                  <img src="mList.png" alt="" width={300} />
-                </div>
-                <div className="minList">
-                  <img src="mList.png" alt="" width={300} />
-                </div>
-                <div className="minList">
-                  <img src="mList.png" alt="" width={300} />
-                </div>
-                <div className="minList">
-                  <img src="mList.png" alt="" width={300} />
-                </div>
-                <div className="minList">
-                  <img src="mList.png" alt="" width={300} />
-                </div>
+                {
+                  otherDevices.map((device, i)=>(
+                    <div 
+                      className="minList bg-background p-2 rounded-lg flex justify-center items-center" key={i}
+                      onClick={()=> {
+                        setOpen(true) 
+                        setOpenPhone(device)
+                      }}
+                    >
+                      <img src={device.img} alt="" className=' h-20'/>
+                    </div>
+                  ))
+                }
               </div>
               <div className="flex justify-center m-4">
-                <button className=' m-auto bg-dark rounded-full px-8 p-2 text-white font-bold text-2xl shadow-lg'>
+                <Link href={'otros'} className=' m-auto bg-dark rounded-full px-8 p-2 text-white font-bold text-2xl shadow-lg'>
                   ver mas
-                </button>
+                </Link>
               </div>
             </div>
           </div>
           {/* componente de lista */}
-          <div className="flex justify-center px-4">
-            <div className="rounded-2xl contactInfo p-4 flex flex-col gap-3">
-              <p className='text-center font-semibold text-white'>
-              &quot;Financiamiento disponible para tus dispositivos electrónicos, sin complicaciones.&quot;
-              </p>
-              <div className="flex justify-between">
-                <button className='bg-white px-8 p-2 rounded-full font-bold'>
-                  Contactar
-                </button>
-                <div className="flex gap-3">
-                  <Link href={''}>
-                    <img src="instagram.png" alt="" />
-                  </Link>
-                  <Link href={''}>
-                    <img src="phone.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=" bg-dark text-sm text-white p-4" style={{
-            color: "#C0C0C0"
-          }}>
-            <p>
-            © 2023 Ovion Company, All rights reserved. developed by Ovion company 
-            </p>
-          </div>
+          <ContactFrame/>
         </div>
       </main>
     </>

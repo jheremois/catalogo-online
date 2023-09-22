@@ -5,8 +5,10 @@ import { useState } from 'react';
 import AltHeader from '../components/AtlHeader';
 import Footer from '../components/Footer';
 import ContactFrame from '../components/ContactFrame';
+import ProductModal from '../components/ProductModal';
 
 export default function Ios() {
+  const [filter, setFilter] = useState('phones'); // Inicialmente muestra teléfonos
 
   const phones = [
     {
@@ -99,7 +101,7 @@ export default function Ios() {
       description: "Desbloqueado 2 Meses de Garantia",
       price: "8,500'"
     },
-    {
+    /* {
       name: "iPhone 8 Plus ",
       img: "iosP/ip8plus.png",
       description: "Desbloqueado 2 Meses de Garantia",
@@ -122,11 +124,65 @@ export default function Ios() {
       img: "iosP/ip7.png",
       description: "Desbloqueado 2 Meses de Garantia",
       price: "5,500"
-    }
+    } */
   ];
+
+  const macbooks = [
+    {
+      name: "MacBook Pro M2 Pro Chip",
+      img: "iosP/mac/mac14pro.png",
+      description: "Tableta potente",
+      price: "30,000'"
+    },
+    {
+      name: "13-inch MacBook Pro with M2 chip",
+      img: "iosP/mac/mac13pro.png",
+      description: "Tableta potente",
+      price: "30,000'"
+    },
+    {
+      name: "MacBook Air 15-Inch",
+      img: "iosP/mac/macAir.png",
+      description: "Tableta potente",
+      price: "30,000'"
+    },
+    // ... (otros cargadores)
+  ];
+
+  const ipads = [
+    {
+      name: "ipad pro (6 gen)",
+      img: "iosP/ipad/ipad6.png",
+      description: "Tableta potente",
+      price: "30,000'"
+    },
+    {
+      name: "ipad air (5 gen)",
+      img: "iosP/ipad/ipad5.png",
+      description: "Tableta potente",
+      price: "30,000'"
+    },
+    {
+      name: "ipad (10 gen)",
+      img: "iosP/ipad/ipad10.png",
+      description: "Tableta potente",
+      price: "30,000'"
+    },
+    // ... (otros iPads)
+  ];
+
+  const currentProducts = filter === 'phones' ? phones : filter === 'macbooks' ? macbooks : ipads;
+  const [open, setOpen] = useState(false)
+  const [openPhone, setOpenPhone] = useState({
+    name: "",
+    img: "",
+    description: "",
+    price: ""
+  })
 
   return (
     <>
+      <ProductModal open={open} setOpen={setOpen} activePhone={openPhone}/>
       <AltHeader titColor='FFD8EB' subTitle='Apple'/>
       <div className="bg-mainBlack">
         <div className=" relative">
@@ -137,10 +193,10 @@ export default function Ios() {
             }}
           >
             <h1 className='text-2xl font-bold'>
-              Mejores telefonos del momento
+              Mejores teléfonos del momento
             </h1>
             <p className='text-sm text-gray-200'>
-              uno de estos puede llama tu atencion
+              Uno de estos puede llamar tu atención
             </p>
           </div>
           <img src="iosP/iosBanner.png" alt="" className='w-full' />
@@ -148,33 +204,61 @@ export default function Ios() {
         <div className="p-6">
           <hr className=' border-b-2'/>
           <h2 
-            className=' text-4xl text-center font-bold p-4 px-11 pb-10' 
+            className=' text-4xl text-center font-bold p-4 px-11 pb-4' 
             style={{color: "#5D78EF"}}
           >
-            Catalogo mas nuevo
+            Catálogo más nuevo
           </h2>
+          <div className="text-center my-4 pb-6">
+            <button
+              className={`${
+                filter === 'phones' ? 'bg-mainBlue' : 'bg-gray-400'
+              } text-white px-4 py-2 mx-2 rounded-full`}
+              onClick={() => setFilter('phones')}
+            >
+              Teléfonos
+            </button>
+            <button
+              className={`${
+                filter === 'macbooks' ? 'bg-mainBlue' : 'bg-gray-400'
+              } text-white px-4 py-2 mx-2 rounded-full`}
+              onClick={() => setFilter('macbooks')}
+            >
+              MacBook
+            </button>
+            <button
+              className={`${
+                filter === 'ipads' ? 'bg-mainBlue' : 'bg-gray-400'
+              } text-white px-4 py-2 mx-2 rounded-full`}
+              onClick={() => setFilter('ipads')}
+            >
+              iPads
+            </button>
+          </div>
+
           <div className="grid grid-cols-2 gap-3">
-            {
-              phones.map((phone, i)=>(
+            {currentProducts.map((product, i) => (
               <div className="text-white text-center items-center flex flex-col gap-2 mb-5" key={i}>
-                <img src={phone.img} alt="" className=' h-40 m-auto'/>
-                <p className='text-sm text-gray-300'>
-                  {phone.name}
-                </p>
-                <button className='bg-mainBlue p-2 px-5 rounded-full uppercase text-sm font-semibold'>
+                <img src={product.img} alt="" className=" h-28 w-auto m-auto" />
+                <p className="text-sm text-gray-300">{product.name}</p>
+                <button 
+                  className="bg-mainBlue p-2 px-5 rounded-full uppercase text-sm font-semibold"
+                  onClick={()=> {
+                    setOpen(true) 
+                    setOpenPhone(product)
+                  }}
+                >
                   Comprar
                 </button>
               </div>
-              ))
-            }
+            ))}
           </div>
+
         </div>
         <div className="pb-4">
           <ContactFrame/>
         </div>
       </div>
-      <Footer/>
     </>
   )
 }
-

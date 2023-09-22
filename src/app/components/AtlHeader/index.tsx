@@ -59,7 +59,7 @@ const AltHeader = ({titColor = "f0f0f0", subTitle = "Otros" })=>{
                     <Link href={'otros'}>
                       Otros
                     </Link>
-                    <Link target='_blank' href={'https://wa.me/p/6785454001516571/18298395327'}>
+                    <Link target='_blank' href={'https://api.whatsapp.com/send?phone=8293754670&text='}>
                       Contactos
                     </Link>
                   </div>
