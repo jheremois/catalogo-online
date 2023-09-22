@@ -18,10 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Header/> */}
-        {/* <div className="h-14"></div> */}
-        {children}
-        <Footer/>
+        <div className=" m-auto max-w-md">
+          {/* <Header/> */}
+          {/* <div className="h-14"></div> */}
+          {children}
+          <Footer/>
+        </div>
       </body>
     </html>
   )

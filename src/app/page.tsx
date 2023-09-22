@@ -114,7 +114,7 @@ export default function Home() {
               height: 685
             }}
           >
-            <div className="pt-5">
+            <div className="pt-5 m-auto">
               <img src="publicFrame.png" alt=""  className='translate-y-0 slideIn'/>
             </div>
             <div className="w-full flex flex-col -translate-y-16">

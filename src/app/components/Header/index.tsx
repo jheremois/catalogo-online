@@ -9,7 +9,7 @@ const Header = ()=>{
 
     return(
       <>
-        <div className='fixed w-screen z-50'>
+        <div className='fixed w-full m-auto left-0 z-50'>
           <header className='bg-dark flex justify-between p-4 overflow-hidden rounded-b-3xl items-center'>
             <div className="">
               <img src='fstech.png' alt="App logo" width={30}/>

@@ -9,7 +9,7 @@ const AltHeader = ({titColor = "f0f0f0", subTitle = "Otros" })=>{
 
     return(
       <>
-        <div className='fixed w-screen z-50'>
+        <div className='fixed w-full m-auto left-0 z-50'>
           <header className='bg-mainBlack flex justify-between p-4 overflow-hidden items-center'>
             <div className="">
                 <h3 className='text-xl font-semibold' style={{color: `#${titColor}`}}>
