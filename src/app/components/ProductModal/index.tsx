@@ -2,7 +2,7 @@ import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Link from 'next/link'
 
-export default function ProductModal({open = false, setOpen = (par: any)=>{}, activePhone = {name: 'a', img: '', price: ''}}) {
+export default function ProductModal({open = false, setOpen = (par: any)=>{}, activePhone = {name: 'a', img: '', price: '', description: ''}}) {
   //const [open, setOpen] = useState(true)
 
   const cancelButtonRef = useRef(null)
@@ -65,7 +65,7 @@ export default function ProductModal({open = false, setOpen = (par: any)=>{}, ac
                   <Link 
                     target='_blank'
                     /* href={"https://wa.me/p/6785454001516571/18298395327"} */
-                    href={`https://api.whatsapp.com/send?phone=8293754670&text=${activePhone.name}.`}
+                    href={`https://api.whatsapp.com/send?phone=8293754670&text=${activePhone.name}, ${activePhone.price}, ${activePhone.description}.`}
                     className="mt-3 inline-flex w-full justify-center rounded-full bg-black text-white font-semibold text-2xl p-2 px-6 "
                   >
                     Comprar
