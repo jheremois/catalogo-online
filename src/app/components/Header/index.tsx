@@ -52,7 +52,7 @@ const Header = ()=>{
                     <Link href={'otros'}>
                       Otros
                     </Link>
-                    <Link target='_blank' href={'https://api.whatsapp.com/send?phone=8293754670&text='}>
+                    <Link target='_blank' href={`https://api.whatsapp.com/send?phone=8293754670`}>
                       Contactos
                     </Link>
                   </div>

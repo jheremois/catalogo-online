@@ -8,7 +8,7 @@ const ContactFrame = ()=>(
             </p>
             <div className="flex justify-between">
             <Link 
-                target='_blank' href={'https://api.whatsapp.com/send?phone=8293754670&text='} 
+                target='_blank' href={`https://api.whatsapp.com/send?phone=8293754670`} 
                 className='bg-white px-8 p-2 rounded-full font-bold'
             >
                 Contactar
@@ -18,7 +18,7 @@ const ContactFrame = ()=>(
                     <img src="instagram.png" alt="" />
                 </Link>
                 <Link 
-                    target='_blank' href={'https://api.whatsapp.com/send?phone=8293754670&text='} 
+                    target='_blank' href={`https://api.whatsapp.com/send?phone=8293754670`}
                 >
                     <img src="phone.png" alt="" />
                 </Link>
