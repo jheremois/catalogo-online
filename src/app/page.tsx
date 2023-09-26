@@ -151,7 +151,7 @@ export default function Home() {
                 <div className="w-full">
                   <div className="flex flex-col gap-2 -translate-y-10">
                     <p className='text-white text-xl text-center font-bold pl-10'>
-                      IPhone 14
+                      IPhone 15
                     </p>
                     <div className="flex justify-end w-f">
                       <img src="sideRPhone.png" alt="" className='translate-y-0 slideSide'/>
