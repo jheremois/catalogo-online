@@ -21,6 +21,18 @@ export default function Home() {
 
   const devices = [ 
     {
+      name: "iPhone 15 Pro Max",
+      img: "iosP/ip15proMax.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "48,000'"
+    },
+    {
+      name: "iPhone 15 Plus",
+      img: "iosP/ip15plus.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "25,000'"
+    },
+    {
       name: "iPhone 14 Pro Max",
       img: "iosP/ip14promax.png",
       description: "Desbloqueado 2 Meses de Garantia",
@@ -124,8 +136,13 @@ export default function Home() {
                   <div className="flex flex-col gap-6">
                     <Link href={'ios'} className='
                       w-fit text-white font-semibold text-lg p-2 pl-5 shadow-lg shadow-gray-700 pr-8 bg-ligthGray rounded-r-full
-                      border-r-2 border-t-2 border-b-2 border-mainPurple
-                    '>
+                      border-r-2 border-t-2 border-b-2 
+                    '
+                    style={{
+                      borderBlockColor: "#CDB7A9",
+                      borderRightColor: "#CDB7A9"
+                    }}
+                    >
                       Ver mas
                     </Link >
                     <img src="sideLPhone.png" alt="" className='translate-y-0 slideTop'/>

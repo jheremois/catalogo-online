@@ -12,6 +12,30 @@ export default function Ios() {
 
   const phones = [
     {
+      name: "iPhone 15 Pro Max",
+      img: "iosP/ip15proMax.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "48,000'"
+    },
+    {
+      name: "iPhone 15 Pro",
+      img: "iosP/ip15pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "39,000'"
+    },
+    {
+      name: "iPhone 15 Plus",
+      img: "iosP/ip15plus.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "25,000'"
+    },
+    {
+      name: "iPhone 15",
+      img: "iosP/ip15.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "25,000'"
+    },
+    {
       name: "iPhone 14 Pro Max",
       img: "iosP/ip14promax.png",
       description: "Desbloqueado 2 Meses de Garantia",
