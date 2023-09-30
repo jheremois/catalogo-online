@@ -24,87 +24,99 @@ export default function Home() {
       name: "iPhone 15 Pro Max",
       img: "iosP/ip15proMax.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "48,000'"
+      price: "99,000'"
+    },
+    {
+      name: "iPhone 15 Pro",
+      img: "iosP/ip15pro.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "80,000'"
     },
     {
       name: "iPhone 15 Plus",
       img: "iosP/ip15plus.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "25,000'"
+      price: "60,000'"
+    },
+    {
+      name: "iPhone 15",
+      img: "iosP/ip15.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "55,000'"
     },
     {
       name: "iPhone 14 Pro Max",
       img: "iosP/ip14promax.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "48,000"
+      price: "62,000'"
     },
     {
       name: "iPhone 14 Pro",
       img: "iosP/ip14pro.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "39,000"
+      price: "52,000'"
     },
     {
       name: "iPhone 14",
       img: "iosP/ip14.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "25,000"
+      price: "39,900'"
     },
     {
       name: "iPhone 13 Pro Max",
       img: "iosP/ip13promax.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "35,000"
+      price: "49,500'"
     },
     {
       name: "iPhone 13 Pro",
       img: "iosP/ip13pro.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "29,000"
+      price: "39,000'"
     },
     {
       name: "iPhone 13",
       img: "iosP/ip13.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "25,000"
+      price: "34,000'"
     },
   ]
   const otherDevices = [ 
     {
-      name: "Echo dot 3",
-      img: "otrosP/amz3.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "7,100"
-    },
-    {
-      name: "usb c brick",
-      img: "otrosP/certified/apC.png",
-      description: "Desbloqueado 2 Meses de Garantia",
-      price: "5,500"
-    },
-    {
       name: "REDMI NOTE 12 PRO",
       img: "otrosP/remiN12pro.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "12,900"
+      price: "15,400"
     },
     {
       name: "REDMI NOTE 11 PRO",
       img: "otrosP/remiN11pro.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "12,500"
+      price: "15,000"
     },
     {
-      name: "Echo dot 4",
+      name: "Echo dot 5",
       img: "otrosP/amz4.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "5,500"
+      price: "4,900"
+    },
+    {
+      name: "Tableta Amazon Fire HD 10, pantalla de 10.1 pulgadas",
+      img: "otrosP/amz10.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "7,500"
+    },
+    {
+      name: "Tableta Amazon Fire HD 8, pantalla HD de 8",
+      img: "otrosP/amz8.png",
+      description: "Desbloqueado 2 Meses de Garantia",
+      price: "5,800"
     },
     {
       name: "Fire tv stick 4k",
       img: "otrosP/amzFire.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "7,900"
+      price: "3,500"
     }
   ]
 
