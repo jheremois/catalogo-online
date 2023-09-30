@@ -3,115 +3,115 @@ const phones = [
         name: "iPhone 15 Pro Max",
         img: "iosP/ip15proMax.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "48,000'"
+        price: "48,000"
     },
     {
         name: "iPhone 15 Pro",
         img: "iosP/ip15pro.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "39,000'"
+        price: "39,000"
     },
     {
         name: "iPhone 15 Plus",
         img: "iosP/ip15plus.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "25,000'"
+        price: "25,000"
     },
     {
         name: "iPhone 15",
         img: "iosP/ip15.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "25,000'"
+        price: "25,000"
     },
     {
         name: "iPhone 14 Pro Max",
         img: "iosP/ip14promax.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "48,000'"
+        price: "48,000"
     },
     {
         name: "iPhone 14 Pro",
         img: "iosP/ip14pro.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "39,000'"
+        price: "39,000"
     },
     {
         name: "iPhone 14",
         img: "iosP/ip14.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "25,000'"
+        price: "25,000"
     },
     {
         name: "iPhone 13 Pro Max",
         img: "iosP/ip13promax.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "35,000'"
+        price: "35,000"
     },
     {
         name: "iPhone 13 Pro",
         img: "iosP/ip13pro.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "29,000'"
+        price: "29,000"
     },
     {
         name: "iPhone 13",
         img: "iosP/ip13.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "25,000'"
+        price: "25,000"
     },
     {
         name: "iPhone 12 Pro Max  ",
         img: "iosP/ip12promax.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "22,000'"
+        price: "22,000"
     },
     {
         name: "iPhone 12 Pro  ",
         img: "iosP/ip12pro.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "17,000'"
+        price: "17,000"
     },
     {
         name: "iPhone 12  ",
         img: "iosP/ip12.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "1,000'"
+        price: "1,000"
     },
     {
         name: "iPhone 11 Pro Max ",
         img: "iosP/ip11promax.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "18,000'"
+        price: "18,000"
     },
     {
         name: "iPhone 11 Pro ",
         img: "iosP/ip11pro.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "15,000'"
+        price: "15,000"
     },
     {
         name: "iPhone 11 ",
         img: "iosP/ip11.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "13,000'"
+        price: "13,000"
     },
     {
         name: "iPhone XS Max ",
         img: "iosP/ip10xsmax.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "12,000'"
+        price: "12,000"
     },
     {
         name: "iPhone XS ",
         img: "iosP/ip10xs.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "9,000'"
+        price: "9,000"
     },
     {
         name: "iPhone X ",
         img: "iosP/ip10.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "8,500'"
+        price: "8,500"
     }
 ];
 
@@ -120,19 +120,19 @@ const macbooks = [
         name: "MacBook Pro M2 Pro Chip",
         img: "iosP/mac/mac14pro.png",
         description: "Tableta potente",
-        price: "30,000'"
+        price: "30,000"
     },
     {
         name: "13-inch MacBook Pro with M2 chip",
         img: "iosP/mac/mac13pro.png",
         description: "Tableta potente",
-        price: "30,000'"
+        price: "30,000"
     },
     {
         name: "MacBook Air 15-Inch",
         img: "iosP/mac/macAir.png",
         description: "Tableta potente",
-        price: "30,000'"
+        price: "30,000"
     },
 ];
 
@@ -141,19 +141,19 @@ const ipads = [
         name: "ipad pro (6 gen)",
         img: "iosP/ipad/ipad6.png",
         description: "Tableta potente",
-        price: "30,000'"
+        price: "30,000"
     },
     {
         name: "ipad air (5 gen)",
         img: "iosP/ipad/ipad5.png",
         description: "Tableta potente",
-        price: "30,000'"
+        price: "30,000"
     },
     {
         name: "ipad (10 gen)",
         img: "iosP/ipad/ipad10.png",
         description: "Tableta potente",
-        price: "30,000'"
+        price: "30,000"
     },
 ];
 
@@ -181,7 +181,7 @@ const samsungphones = [
         name: "Samsung galaxy flip z fold 2",
         img: "smP/smflipzfold.png",
         description: "Desbloqueado 2 Meses de Garantia",
-        price: "35,000'"
+        price: "35,000"
     },
 
     {

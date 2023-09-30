@@ -40,7 +40,7 @@ export default function Samsung() {
       name: "Samsung galaxy flip z fold 5",
       img: "smP/smflipzfold.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "85,000'"
+      price: "85,000"
     },
 
     {

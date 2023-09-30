@@ -24,61 +24,61 @@ export default function Home() {
       name: "iPhone 15 Pro Max",
       img: "iosP/ip15proMax.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "99,000'"
+      price: "99,000"
     },
     {
       name: "iPhone 15 Pro",
       img: "iosP/ip15pro.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "80,000'"
+      price: "80,000"
     },
     {
       name: "iPhone 15 Plus",
       img: "iosP/ip15plus.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "60,000'"
+      price: "60,000"
     },
     {
       name: "iPhone 15",
       img: "iosP/ip15.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "55,000'"
+      price: "55,000"
     },
     {
       name: "iPhone 14 Pro Max",
       img: "iosP/ip14promax.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "62,000'"
+      price: "62,000"
     },
     {
       name: "iPhone 14 Pro",
       img: "iosP/ip14pro.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "52,000'"
+      price: "52,000"
     },
     {
       name: "iPhone 14",
       img: "iosP/ip14.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "39,900'"
+      price: "39,900"
     },
     {
       name: "iPhone 13 Pro Max",
       img: "iosP/ip13promax.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "49,500'"
+      price: "49,500"
     },
     {
       name: "iPhone 13 Pro",
       img: "iosP/ip13pro.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "39,000'"
+      price: "39,000"
     },
     {
       name: "iPhone 13",
       img: "iosP/ip13.png",
       description: "Desbloqueado 2 Meses de Garantia",
-      price: "34,000'"
+      price: "34,000"
     },
   ]
   const otherDevices = [ 

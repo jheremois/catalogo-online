@@ -6,8 +6,8 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Inventario',
-  description: 'App de inventario',
+  title: 'FS tech - catalogo',
+  description: 'Descubre el catalogo de FS tech',
 }
 
 export default function RootLayout({
