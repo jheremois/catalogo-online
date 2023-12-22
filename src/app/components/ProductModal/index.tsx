@@ -34,7 +34,7 @@ export default function ProductModal({open = false, setOpen = (par: any)=>{}, ac
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel 
-                className="relative transform overflow-hidden rounded-3xl bg-white text-left transition-all mx-12 py-9 px-5"
+                className="relative transform overflow-hidden rounded-3xl bg-white text-left transition-all py-9 px-6"
                 style={{
                   boxShadow: "10px 10px 5px 0px rgba(0, 0, 0, 0.383)"
                 }}
@@ -45,7 +45,7 @@ export default function ProductModal({open = false, setOpen = (par: any)=>{}, ac
                         {activePhone.name}
                     </h1>
                     <p>
-                        Equipo nuevo Desloqeuado 2 meses de garantia 
+                    Equipo nuevo. Desbloqueado 2 meses de garantia
                     </p>
                     <div>
                         Precio 
